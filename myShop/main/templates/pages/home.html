@@ -1,0 +1,36 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to PyShop</h1>
+        <p>Fresh, delicious food delivered fast and easy.</p>
+        <a href="{% url 'products' %}" class="btn">Order Now</a>
+    </div>
+</section>
+
+<section class="featured">
+    <h2>Featured Foods</h2>
+
+    <div class="food-grid">
+
+        <div class="food-card">
+            <h3>Cheeseburger</h3>
+            <p>Juicy beef with melted cheese</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Fries</h3>
+            <p>Crispy golden potato fries</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Pizza</h3>
+            <p>Cheesy pepperoni pizza slice</p>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+{% include 'includes/navbar.html' %}
+{% include 'includes/modals.html' %}
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+{% include 'includes/footer.html' %}
+
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</body>
+</html>

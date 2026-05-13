@@ -1,0 +1,18 @@
+<nav class="navbar">
+    <div class="nav-container">
+
+        <div class="shop-name">
+            <p>Food Hub</p>
+        </div>
+
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a></li>
+                <li><a href="{% url 'products' %}" class="{% if request.resolver_match.url_name == 'products' %}active{% endif %}">Products</a></li>
+                <li><a href="{% url 'transactions' %}" class="{% if request.resolver_match.url_name == 'transactions' %}active{% endif %}">Transactions</a></li>
+                <li><a href="{% url 'settings' %}" class="{% if request.resolver_match.url_name == 'settings' %}active{% endif %}">Settings</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>

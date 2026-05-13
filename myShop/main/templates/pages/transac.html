@@ -1,0 +1,63 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+
+<section class="transactions-page">
+
+    <div class="transactions-header">
+        <h1>My Transactions</h1>
+        <p>Your order history</p>
+    </div>
+
+    <div class="transactions-container">
+
+        <!-- ORDER CARD -->
+        <div class="transaction-card">
+
+            <div class="transaction-top">
+                <div>
+                    <h3>Order #1001</h3>
+                    <span class="status delivered">Delivered</span>
+                </div>
+                <small>May 13, 2026</small>
+            </div>
+
+            <div class="transaction-items">
+                <p>Cheeseburger x1</p>
+                <p>Fries x1</p>
+            </div>
+
+            <div class="transaction-bottom">
+                <span>Total: ₱180</span>
+                <button>View Details</button>
+            </div>
+
+        </div>
+
+        <!-- ORDER CARD -->
+        <div class="transaction-card">
+
+            <div class="transaction-top">
+                <div>
+                    <h3>Order #1002</h3>
+                    <span class="status pending">Pending</span>
+                </div>
+                <small>May 12, 2026</small>
+            </div>
+
+            <div class="transaction-items">
+                <p>Pizza x1</p>
+            </div>
+
+            <div class="transaction-bottom">
+                <span>Total: ₱199</span>
+                <button>View Details</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
